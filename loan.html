@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "loanstyle.css">
+    <title>3 in 1 calculator</title>
+    <link rel="short icon" type="image/png" href="logo.jpg">
+</head>
+<body>
+    <div id="bar">
+		<div id="home"  style="color: red; font-family: calibri; font-size: 25pt; text-align: center;"><a href="calculator.HTML"><label>CALCULATOR</label></a></div>
+		<div id="bmi"  style="color: red; font-family: calibri; font-size: 25pt; text-align: center;"><a href="BMI.html"><label>BMI CALCULATOR</label></a></div>
+		<div id="loan" style="color: red; font-family: calibri; font-size: 25pt; text-align: center;"><label>LOAN CALCULATOR</label></div>
+    </div>
+        <br>
+        <br>
+        <br>
+    <div class = "container">
+        <p>Loan Amount: <input id = "amount" type = "number" value = "1" onchange = "calculateLoan()"> ₹</p>
+        <p>Interest Rate: <input id = "interest" type = "number" value = "0.1" onchange = "calculateLoan()"> %</p>
+        <p>Months to Pay: <input id = "months" type = "number" value = "1" onchange = "calculateLoan()"></p>
+        <h2 id = "payment"></h2>
+    </div>
+</body>
+<script src = "loanscript.js"></script>    
+</html>
